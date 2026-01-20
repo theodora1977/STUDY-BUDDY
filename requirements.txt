@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+gunicorn
+SQLAlchemy
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+fastapi-mail
