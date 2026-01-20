@@ -8,7 +8,7 @@ A full-stack study application with FastAPI backend and React frontend, featurin
 
 1. **Install Python dependencies**:
    ```bash
-   pip install -r requirement.txt
+   pip install -r requirements.txt
    ```
 
 2. **Configure Email (Optional)**:

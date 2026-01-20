@@ -67,7 +67,7 @@ def check_dependencies():
         return True
     except ImportError as e:
         print(f"❌ Missing dependency: {e}")
-        print("Run: pip install -r requirement.txt")
+        print("Run: pip install -r requirements.txt")
         return False
 
 def main():

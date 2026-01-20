@@ -110,7 +110,8 @@ def get_progress(user_id: int = Depends(get_current_user), db: Session = Depends
 
 # This must be after all other API routes
 # It serves the built React app (the 'assets' directory)
-app.mount("/assets", StaticFiles(directory="frontend/dist/assets"), name="assets")
+if os.path.exists("frontend/dist/assets"):
+    app.mount("/assets", StaticFiles(directory="frontend/dist/assets"), name="assets")
 
 @app.get("/{catchall:path}")
 async def serve_spa(catchall: str):
